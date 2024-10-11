@@ -16,8 +16,9 @@ public class JogoTest {
 		assertEquals(0, jogo.getResultados().size());
 
 		jogo.anota(new Resultado(new Participante("Leonardo"), 150));
+		jogo.anota(new Resultado(new Participante("Cleiton"), 100));
 
-		assertEquals(1, jogo.getResultados().size());
+		assertEquals(2, jogo.getResultados().size());
 
 		assertEquals(150.0, jogo.getResultados().get(0).getMetrica(), 0.00001);
 	}
