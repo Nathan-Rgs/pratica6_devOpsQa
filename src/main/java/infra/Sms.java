@@ -1,9 +1,9 @@
 package infra;
 
 import br.com.valueprojects.mock_spring.model.Participante;
-import br.com.valueprojects.mock_spring.service.SmsService;
+import br.com.valueprojects.mock_spring.service.Notification;
 
-public class Sms implements SmsService {
+public class Sms implements Notification {
 
     @Override
     public void send(Participante participante) {
